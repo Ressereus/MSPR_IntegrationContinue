@@ -114,16 +114,13 @@ public class CalculatriceJenkins extends javax.swing.JFrame
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
 //soustraction
-    int entier1 = 0;
-    int entier2 = 0;
+    float Valeur1 = 0;
+    float Valeur2 = 0;
+    Valeur1=Float.parseFloat(TextEntree.getText());
+    Valeur2=Float.parseFloat(TextSortie.getText());
     
-    entier1=Integer.parseInt(TextEntree.getText());
-    entier2=Integer.parseInt(TextSortie.getText());
-    
-    entier2 = entier1 - entier2;
-    String sortie = String.format("%d", entier2);
-    
-    
+    Valeur2 = Valeur1 - Valeur2;
+    String sortie = String.format("%f", Valeur2);
     TextSortie.setText(sortie);
 
 
@@ -132,17 +129,13 @@ public class CalculatriceJenkins extends javax.swing.JFrame
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
 
 //Addition
-    int entier1 = 0;
-    int entier2 = 0;
+    float Valeur1 = 0;
+    float Valeur2 = 0;
+    Valeur1=Float.parseFloat(TextEntree.getText());
+    Valeur2=Float.parseFloat(TextSortie.getText());
     
-    
-    entier1=Integer.parseInt(TextEntree.getText());
-    entier2=Integer.parseInt(TextSortie.getText());
-    
-    entier2 = entier1 + entier2;
-    String sortie = String.format("%d", entier2);
-    
-    
+    Valeur2 = Valeur1 + Valeur2;
+    String sortie = String.format("%f", Valeur2);
     TextSortie.setText(sortie);
 
 
@@ -150,15 +143,13 @@ public class CalculatriceJenkins extends javax.swing.JFrame
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
 //division  
-   int entier1 = 0;
-    int entier2 = 0;
-    entier1=Integer.parseInt(TextEntree.getText());
-    entier2=Integer.parseInt(TextSortie.getText());
+    float Valeur1 = 0;
+    float Valeur2 = 0;
+    Valeur1=Float.parseFloat(TextEntree.getText());
+    Valeur2=Float.parseFloat(TextSortie.getText());
     
-    entier2 = entier1 / entier2;
-    String sortie = String.format("%d", entier2);
-    
-    
+    Valeur2 = Valeur1 / Valeur2;
+    String sortie = String.format("%f", Valeur2);
     TextSortie.setText(sortie);
 
 
@@ -168,19 +159,24 @@ public class CalculatriceJenkins extends javax.swing.JFrame
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
 //multiplication
-    int entier1 = 0;
-    int entier2 = 0;
-    entier1=Integer.parseInt(TextEntree.getText());
-    entier2=Integer.parseInt(TextSortie.getText());
+    float Valeur1 = 0;
+    float Valeur2 = 0;
+    Valeur1=Float.parseFloat(TextEntree.getText());
+    Valeur2=Float.parseFloat(TextSortie.getText());
     
-    entier2 = entier1 * entier2;
-    String sortie = String.format("%d", entier2);
-    
-    
+    Valeur2 = Valeur1 * Valeur2;
+    String sortie = String.format("%f", Valeur2);
     TextSortie.setText(sortie);
 
     }//GEN-LAST:event_jButton13ActionPerformed
 
+    
+    
+    
+    
+    
+    
+    
     /**
      * @param args the command line arguments
      */
@@ -216,6 +212,8 @@ public class CalculatriceJenkins extends javax.swing.JFrame
             }
         });
     }
+    
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField TextEntree;

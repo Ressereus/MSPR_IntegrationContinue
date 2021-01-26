@@ -45,8 +45,65 @@ public class CalculatriceJenkinsTest {
         System.out.println("main");
         String[] args = null;
         CalculatriceJenkins.main(args);
+        
+        CalculatriceJenkins test;
+        
+        
+        
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
+    }
+    
+    @Test
+    public void TestAddition()
+    {
+        
+        String TextEntree = "3";
+        String TextSortie = "2";
+        float Valeur1 = Float.parseFloat(TextEntree);
+        float Valeur2 = Float.parseFloat(TextSortie);
+        Valeur2 = Valeur1 + Valeur2;
+        TextSortie = String.format("%f", Valeur2);
+        
+        assertEquals(5, Valeur2,0.001);
+        
+    }
+    @Test
+    public void TestSoustraction()
+    {
+        String TextEntree = "3";
+        String TextSortie = "2";
+        float Valeur1 = Float.parseFloat(TextEntree);
+        float Valeur2 = Float.parseFloat(TextSortie);
+        Valeur2 = Valeur1 - Valeur2;
+        TextSortie = String.format("%.01f", Valeur2);
+        
+        assertEquals(1, Valeur2,0.001);
+    }
+    @Test
+    public void TestMultiplication()
+    {
+        
+        String TextEntree = "3";
+        String TextSortie = "2";
+        float Valeur1 = Float.parseFloat(TextEntree);
+        float Valeur2 = Float.parseFloat(TextSortie);
+        Valeur2 = Valeur1 * Valeur2;
+        TextSortie = String.format("%.01f", Valeur2);
+        
+        assertEquals(6, Valeur2,0.001);
+    }
+    @Test
+    public void TestDivision()
+    {
+        String TextEntree = "25";
+        String TextSortie = "5";
+        float Valeur1 = Float.parseFloat(TextEntree);
+        float Valeur2 = Float.parseFloat(TextSortie);
+        Valeur2 = Valeur1 / Valeur2;
+        TextSortie = String.format("%.01f", Valeur2);
+        
+        assertEquals(5, Valeur2,0.001);
     }
     
 }
