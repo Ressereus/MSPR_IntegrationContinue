@@ -103,7 +103,7 @@ public class CalculatriceJenkinsTest {
         Valeur2 = Valeur1 / Valeur2;
         TextSortie = String.format("%.01f", Valeur2);
         
-        assertEquals(5, Valeur2,0.001);
+        assertEquals(5, Valeur2,0.001) ;
     }
     
 }
