@@ -1146,14 +1146,14 @@ is divided into following sections:
 		<junit haltonerror="true" haltonfailure="true">
 			<classpath refid="classpath.test" />
 			<formatter type="brief" usefile="false" />
-			<test name="javab3.NewTestSuite" />
+			<test name="CalculatriceJenkinsIT" />
 		</junit>
 
         <!-- Empty placeholder for easier customization. -->
 
         <!-- You can override this target in the ../build.xml file. -->
 
-    </target>
+   
 			
 		
 		
